@@ -12,11 +12,10 @@
 var today = moment();
 $("#currentDay").text(today.format("MMM Do, YYYY"));
 
-// color code the hours
-
 
 // need an event listener on save button => add function after click
 // .ready is to specify a function to execute when the DOM is loaded
+// all functions must be inside of .ready because they will ALL be executed at once without separate function calls
 $(document).ready(function() {
     // save button saves data even upon refresh
 
@@ -29,8 +28,31 @@ $(document).ready(function() {
         // get from sibling node from class description (.val gets current value of the first element in set of matched el's)
         let userInput = $(this).siblings(".description").val(); 
 
-        // localStorage for that data in general
+        // need to put into localStorage to keep even after refresh
         localStorage.setItem(hour,userInput);
-    }
-    )}
-)
+       
+    }),
+
+    // color code the hours
+    /* if (currentTime > "particular time threshold"...oh wait ".time-block") {
+        display past time as grey, 
+    }else if {
+        display CURRENT time as RED
+    } else 
+    display green for future time
+    */ 
+
+    function scanCurrentTime(){
+        // scan the current time with 8 AM
+        // initialize currentTime
+        let currentTime = moment().hour();
+
+        // grab block time
+        // $("textarea").each( () {
+            
+        // })
+    },
+
+    $("#hour-8 .description").val(localStorage.getItem("hour-8"));
+
+})
