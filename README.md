@@ -14,8 +14,7 @@ Nothing special to install
 ## Usage
 When you load the page, you'll see a big header with today's (changing each day) and you'll see a bunch of different times to type into. Hit the save button and your description will be saved! If you have to walk away and close/refresh the page, that description will be saved until it is cleared from your local storage!
 
-Here is a demo: 
-- https://drive.google.com/file/d/1_d6dQYHHXeLenJyhZ0cse8IW0y0d5BP1/view
+- Here is a demo: https://drive.google.com/file/d/1_d6dQYHHXeLenJyhZ0cse8IW0y0d5BP1/view
 
 - Github Repo: https://github.com/casukhelai/workday_scheduler
 - Github Page: https://casukhelai.github.io/workday_scheduler/
