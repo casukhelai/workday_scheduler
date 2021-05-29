@@ -46,13 +46,14 @@ $(document).ready(function() {
         // scan the current time with 8 AM
         // initialize currentTime
         let currentTime = moment().hour();
+        
 
-        // grab block time
-        // $("textarea").each( () {
-            
-        // })
+        // grab block time...maybe initialize an array and then the above if statements
+        
     },
 
+    // want to call every hour id that has local storage allocated
+    // would need to initialize an array holding all of the hour ids in order to write a for-loop
     $("#hour-8 .description").val(localStorage.getItem("hour-8"));
 
 })
